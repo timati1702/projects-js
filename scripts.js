@@ -51,6 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'national-text' : ': Белорус',
             'r-languages' : 'Языки',
             'r-languages-text' : ': Белорусский, Английский, Русский',
+            'communication' : 'Коммуникация',
+            'creativity' : 'Креативность',
+            'teamwork' : 'Работа в команде',
+            'hobby' : 'Хобби',
+            'school' : 'Законченное среднее общее образование',
+            'univer' : 'Незаконченное высшее образование'
         },
         'en': {
             'title': 'Resume',
@@ -72,6 +78,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'national-text' : ': Belarusian',
             'r-languages' : 'Languages',
             'r-languages-text' : ': Belarusian, English, Russian',
+            'communication' : 'Communication',
+            'creativity' : 'Creativity',
+            'teamwork' : 'Teamwork',
+            'hobby' : 'Hobby',
+            'school' : 'Completed secondary general education',
+            'univer' : 'Incomplete higher education'
         }
     };
 
