@@ -26,3 +26,106 @@ body {
     text-align: right;
     margin-left: 30px;
 }
+
+.r-page__left {
+    padding: 20px;
+}
+
+.r-page__left-contact {
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.r-page__left-contact-phone {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.r-page__left-contact-phone img {
+    width: 16px;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.r-page__left-contact-phone-text {
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.r-page__left-contact-email {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.r-page__left-contact-email img {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.r-page__left-contact-email-text {
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.r-page__left-contact-map {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.r-page__left-contact-map img {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.r-page__left-contact-map-text {
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.r-page__left-personal {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.r-page__left-personal-text-item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.r-page__left-personal-text-label {
+    min-width: 180px;
+    font-weight: 600;
+    text-decoration:underline;
+}
+
+.r-page__left-skills {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.r-page__left-skills-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.r-page__left-skills-label {
+    white-space: nowrap;
+    min-width: 180px;
+}
+
+.r-page__left-skills-stripe {
+    height: 10px;             
+    background-color: #4285F4; 
+    margin-left: 0;     
+}
