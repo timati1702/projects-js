@@ -1,8 +1,30 @@
+:root {
+    --bg-light: whitesmoke;
+    --text-light: #333;
+    --accent-light: #4285F4;
+    --border-light: #ddd;
+    --card-bg-light: white;
+    
+    --bg-dark: #333;
+    --text-dark: whitesmoke;
+    --accent-dark: yellow;
+    --border-dark: #555;
+    --card-bg-dark: #1e1e1e;
+    
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --accent: var(--accent-light);
+    --border: var(--border-light);
+    --card-bg: var(--card-bg-light);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .r-page__main {
@@ -16,14 +38,14 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border);
 }
 
-.r-page__header img{
-    width: 250px;
-    height: 250px;
+.r-page__header img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--text);
 }
 
 .r-page__header-name {
@@ -38,49 +60,19 @@ body {
     display: block;
     padding-left: 20px;
     flex: 1;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    transition: background-color 0.3s;
 }
 
 .r-page__left-contact {
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.r-page__left-contact-phone {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.r-page__left-contact-phone img {
-    width: 16px;
-    width: 16px;
-    margin-top: 2px;
-}
-
-.r-page__left-contact-phone-text {
-    display: inline-block;
-    line-height: 1.4;
-}
-
-.r-page__left-contact-email {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.r-page__left-contact-email img {
-    width: 16px;
-    height: 16px;
-    margin-top: 2px;
-}
-
-.r-page__left-contact-email-text {
-    display: inline-block;
-    line-height: 1.4;
-}
-
+.r-page__left-contact-phone,
+.r-page__left-contact-email,
 .r-page__left-contact-map {
     display: flex;
     align-items: flex-start;
@@ -88,13 +80,13 @@ body {
     margin-bottom: 20px;
 }
 
-.r-page__left-contact-map img {
+.r-page__left-contact img {
     width: 16px;
     height: 16px;
     margin-top: 2px;
 }
 
-.r-page__left-contact-map-text {
+.r-page__left-contact-text {
     display: inline-block;
     line-height: 1.4;
 }
@@ -102,7 +94,6 @@ body {
 .r-page__left-personal {
     padding-top: 20px;
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .r-page__left-personal-text-item {
@@ -113,19 +104,20 @@ body {
 .r-page__left-personal-text-label {
     min-width: 180px;
     font-weight: 600;
-    text-decoration:underline;
+    text-decoration: underline;
+    color: var(--text);
 }
 
 .r-page__left-skills {
     padding-top: 30px;
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .r-page__left-skills-item {
     display: flex;
     gap: 10px;
     align-items: center;
+    line-height: 2;
 }
 
 .r-page__left-skills-label {
@@ -133,21 +125,27 @@ body {
     min-width: 180px;
 }
 
-.r-page__left-skills-stripe {
-    height: 10px;             
-    background-color: #4285F4; 
-    margin-left: 0;     
+.r-page__left-skills-stripe, .r-page__right-software-stripe{
+    height: 10px;
+    margin-left: 0;
+    border: none;
+    background-color: var(--accent);
 }
 
 .r-page__right {
     flex: 2;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    transition: background-color 0.3s;
 }
 
 .r-page__right-about-text {
     text-align: justify;
     font-size: 18px;
     width: 90%;
+    line-height: 1.6;
 }
 
 .r-page__right-education {
@@ -163,23 +161,16 @@ body {
     padding-left: 10px;
 }
 
-.r-page__right-education-text {
-    text-align: left;
-    font-size: 18px;
-    line-height: 2;
-}
-
-
 .r-page__right-software {
-    padding-top: 110px;
+    padding-top: 40px;
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .r-page__right-software-item {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .r-page__right-software-label {
@@ -187,8 +178,37 @@ body {
     min-width: 180px;
 }
 
-.r-page__right-software-stripe {
-    height: 10px;             
-    background-color: #4285F4; 
-    margin-left: 0;     
+body.r-page-light {
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --accent: var(--accent-light);
+    --border: var(--border-light);
+    --card-bg: var(--card-bg-light);
+}
+
+body.r-page-dark {
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+    --accent: var(--accent-dark);
+    --border: var(--border-dark);
+    --card-bg: var(--card-bg-dark);
+}
+
+.theme-toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle img {
+    width: 32px;
+    height: 32px;
 }
