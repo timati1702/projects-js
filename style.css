@@ -212,3 +212,23 @@ body.r-page-dark {
     width: 32px;
     height: 32px;
 }
+
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 70px; 
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 100;
+    font-weight: bold;
+    color: var(--text);
+    transition: all 0.3s;
+}
+
+.language-toggle:hover {
+    background: var(--accent);
+    color: black;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Резюме</title>
+        <title></title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="scripts.js"></script>
@@ -9,16 +9,14 @@
     <body class="r-page-light">
         <div class="r-page__header">
             <img src="resources/photo.png" alt="Фото работника">
-            <span class="r-page__header-name">
-                Малевич Тимофей Вадимович<br>
-                Инженер-программист
-            </span>
+            <span class="r-page__header-name"></span>
             <button style="margin-left: 300px;" id="theme-toggle" class="theme-toggle"><img src="resources/sun_icon.png" alt="темминг" style="width: 32px; height: 32px;"></button>
+            <button id="language-toggle" class="language-toggle">EN</button>
         </div>
         <div class="r-page__main">
             <div class="r-page__left">
                 <div class="r-page__left-contact">
-                    <h2>Контакты</h2>
+                    <h2 data-translate="contacts">Контакты</h2>
                     <div class="r-page__left-contact-phone">
                         <img src="resources/phone_icon.png" alt="Иконка телефона">
                         <span class="r-page__left-contact-phone-text">
@@ -34,50 +32,47 @@
                     </div>
                     <div class="r-page__left-contact-map">
                         <img src="resources/maps_icon.png" alt="Иконка карты">
-                        <span class="r-page__left-contact-map-text">
-                            Республика Беларусь, г. Минск, 
-                            <br>ул. Герасименко 52/2, кв. 393
-                        </span>
+                        <span class="r-page__left-contact-map-text" data-translate="adress"></span>
                     </div>
                 </div>
                 <div class="r-page__left-personal">
-                    <h2>Личные данные</h2>
+                    <h2 data-translate="personal">Личные данные</h2>
                     <div class="r-page__left-personal-text">
                         <div class="r-page__left-personal-text-item">
-                            <span class="r-page__left-personal-text-label">День рождения</span>
-                            <span class="r-page__left-personal-text-value">: 17 февраля 2005г.</span>
+                            <span class="r-page__left-personal-text-label" data-translate="birthday"></span>
+                            <span class="r-page__left-personal-text-value" data-translate="birthday-text"></span>
                         </div>
                         <div class="r-page__left-personal-text-item">
-                            <span class="r-page__left-personal-text-label">Отношения</span>
-                            <span class="r-page__left-personal-text-value">: Женат</span>
+                            <span class="r-page__left-personal-text-label" data-translate="relationship"></span>
+                            <span class="r-page__left-personal-text-value" data-translate="relationship-text"></span>
                         </div>
                         <div class="r-page__left-personal-text-item">
-                            <span class="r-page__left-personal-text-label">Национальность</span>
-                            <span class="r-page__left-personal-text-value">: Белорус</span>
+                            <span class="r-page__left-personal-text-label" data-translate="national"></span>
+                            <span class="r-page__left-personal-text-value" data-translate="national-text"></span>
                         </div>
                         <div class="r-page__left-personal-text-item">
-                            <span class="r-page__left-personal-text-label">Языки</span>
-                            <span class="r-page__left-personal-text-value">: Белорусский, Английский, Русский</span>
+                            <span class="r-page__left-personal-text-label" data-translate="r-languages"></span>
+                            <span class="r-page__left-personal-text-value" data-translate="r-languages-text"></span>
                         </div>
                     </div>
                 </div>
                 <div class="r-page__left-skills">
-                    <h2>Навыки</h2>
+                    <h2 data-translate="skills">Навыки</h2>
                     <div class="r-page__left-skills-text">
                         <div class="r-page__left-skills-item"> 
-                            <span class="r-page__left-skills-label">Коммуникация</span>
+                            <span class="r-page__left-skills-label" data-translate="">Коммуникация</span>
                             <hr class="r-page__left-skills-stripe" style="width: 10%;">
                         </div>
                         <div class="r-page__left-skills-item"> 
-                            <span class="r-page__left-skills-label">Креативность</span>
+                            <span class="r-page__left-skills-label" data-translate="">Креативность</span>
                             <hr class="r-page__left-skills-stripe" style="width: 15%;">
                         </div>
                         <div class="r-page__left-skills-item"> 
-                            <span class="r-page__left-skills-label">Работа в команде</span>
+                            <span class="r-page__left-skills-label" data-translate="">Работа в команде</span>
                             <hr class="r-page__left-skills-stripe" style="width: 9%;">
                         </div>
                         <div class="r-page__left-skills-item"> 
-                            <span class="r-page__left-skills-label">Хобби</span>
+                            <span class="r-page__left-skills-label" data-translate="">Хобби</span>
                             <hr class="r-page__left-skills-stripe" style="width: 20%;">
                         </div>
                     </div>
@@ -85,8 +80,8 @@
             </div>
             <div class="r-page__right">
                 <div class="r-page__right-about">
-                    <h2>Про себя</h2>
-                    <div class="r-page__right-about-text">
+                    <h2 data-translate="about">Про себя</h2>
+                    <div class="r-page__right-about-text" data-translate="about-text">
                         Меня зовут Малевич Тимофей Вадимович и я учусь в "Белорусском Национальном Техническом
                         Университете" (БНТУ) на факультете "Информационных технологий и робототехники" (ФИТР)
                         по специальности "Информационные системы и технологии" (ИСИТ). Занимаюсь front-end разработкой, опыта
@@ -94,14 +89,14 @@
                     </div>
                 </div>
                 <div class="r-page__right-education">
-                    <h2>Образование</h2>
+                    <h2 data-translate="education">Образование</h2>
                     <div class="r-page__right-education-text">
-                        <img src="resources/education_icon.png" alt="Шляпа"><span>Законченное среднее общее образование</span><br>
-                        <img src="resources/education_icon.png" alt="Шляпа"><span>Незаконченное высшее образование</span>
+                        <img src="resources/education_icon.png" alt="Шляпа"><span data-translate="">Законченное среднее общее образование</span><br>
+                        <img src="resources/education_icon.png" alt="Шляпа"><span data-translate="">Незаконченное высшее образование</span>
                     </div>
                 </div>
                 <div class="r-page__right-software">
-                    <h2>Языки программирования</h2>
+                    <h2 data-translate="languages">Языки программирования</h2>
                     <div class="r-page__right-software-text">
                         <div class="r-page__right-software-item"> 
                             <span class="r-page__right-software-label">C#</span>
