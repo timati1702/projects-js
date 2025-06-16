@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.r-page__header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.r-page__header img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.r-page__header-name {
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    margin-left: 30px;
+}
