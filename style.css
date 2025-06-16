@@ -5,6 +5,13 @@ body {
     background-color: whitesmoke;
 }
 
+.r-page__main {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
 .r-page__header {
     display: flex;
     align-items: center;
@@ -28,7 +35,9 @@ body {
 }
 
 .r-page__left {
-    padding: 20px;
+    display: block;
+    padding-left: 20px;
+    flex: 1;
 }
 
 .r-page__left-contact {
@@ -108,7 +117,7 @@ body {
 }
 
 .r-page__left-skills {
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -125,6 +134,60 @@ body {
 }
 
 .r-page__left-skills-stripe {
+    height: 10px;             
+    background-color: #4285F4; 
+    margin-left: 0;     
+}
+
+.r-page__right {
+    flex: 2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.r-page__right-about-text {
+    text-align: justify;
+    font-size: 18px;
+    width: 90%;
+}
+
+.r-page__right-education {
+    padding-top: 60px;
+}
+
+.r-page__right-education-text img {
+    width: 16px;
+    height: 16px;
+}
+
+.r-page__right-education-text span {
+    padding-left: 10px;
+}
+
+.r-page__right-education-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+.r-page__right-software {
+    padding-top: 110px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.r-page__right-software-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.r-page__right-software-label {
+    white-space: nowrap;
+    min-width: 180px;
+}
+
+.r-page__right-software-stripe {
     height: 10px;             
     background-color: #4285F4; 
     margin-left: 0;     
